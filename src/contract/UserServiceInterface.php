@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  253618519@qq.com
  */
 
-namespace Jyhf\RpcServer;
+namespace Jyhf\RpcServer\Contract;
 
 interface UserServiceInterface
 {
