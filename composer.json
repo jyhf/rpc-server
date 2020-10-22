@@ -1,5 +1,7 @@
 {
     "name": "jyhf/rpc-server",
+    "description": "jyhf rpc server",
+    "license": "MIT",
     "authors": [
         {
             "name": "jyhf",
