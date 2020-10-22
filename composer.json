@@ -1,0 +1,15 @@
+{
+    "name": "jyhf/rpc-server",
+    "authors": [
+        {
+            "name": "jyhf",
+            "email": "admin@robinfinjy.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Jyhf\\RpcServer\\": "src/"
+        }
+    }
+}
