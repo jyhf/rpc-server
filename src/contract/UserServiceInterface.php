@@ -26,7 +26,7 @@ interface UserServiceInterface
      *
      * @param string $token
      *
-     * @return array
+     * @return array|null
      */
-    public function getMallUserByToken(string $token): array;
+    public function getMallUserByToken(string $token): ?array;
 }
