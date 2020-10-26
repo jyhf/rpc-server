@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 /**
  * This file is part of jyhf-rpc-server.
@@ -9,11 +8,11 @@ declare(strict_types=1);
  */
 
 namespace Jyhf\RpcServer\Contract;
-
 interface UserServiceInterface
 {
     /**
      * Register user
+     *
      * @param string      $username
      * @param string      $password
      * @param string|null $parent
@@ -21,4 +20,13 @@ interface UserServiceInterface
      * @return bool
      */
     public function register(string $username, string $password, string $parent = null): bool;
+
+    /**
+     * Get mall user info by token
+     *
+     * @param string $token
+     *
+     * @return array
+     */
+    public function getMallUserByToken(string $token): array;
 }
