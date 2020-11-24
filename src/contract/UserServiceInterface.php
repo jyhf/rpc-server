@@ -31,11 +31,11 @@ interface UserServiceInterface
     public function getMallUserByToken(string $token): array;
 
     /**
-     * Get Jyhf User Id
+     * Get User Parent account
      *
      * @param string $account
      *
-     * @return int|null
+     * @return string|null
      */
-    public function getUserId(string $account): ?int;
+    public function getUserParentAccount(string $account): ?string;
 }
