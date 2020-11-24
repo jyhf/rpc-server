@@ -26,7 +26,16 @@ interface UserServiceInterface
      *
      * @param string $token
      *
-     * @return array|null
+     * @return array
      */
-    public function getMallUserByToken(string $token): ?array;
+    public function getMallUserByToken(string $token): array;
+
+    /**
+     * Get Jyhf User Id
+     *
+     * @param string $account
+     *
+     * @return int|null
+     */
+    public function getUserId(string $account): ?int;
 }
