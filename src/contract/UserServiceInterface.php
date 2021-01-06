@@ -38,4 +38,22 @@ interface UserServiceInterface
      * @return string|null
      */
     public function getUserParentAccount(string $account): ?string;
+
+    /**
+     * Login
+     * @param string $username
+     * @param string $password
+     * @param string $platform
+     *
+     * @return array
+     */
+    public function login(string $username, string $password, string $platform): array;
+
+    /**
+     * Get User info by token
+     * @param string $token
+     *
+     * @return array
+     */
+    public function getUserByToken(string $token): array;
 }
