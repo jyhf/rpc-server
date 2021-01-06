@@ -45,15 +45,17 @@ interface UserServiceInterface
      * @param string $password
      * @param string $platform
      *
-     * @return array
+     * @return string|null
      */
-    public function login(string $username, string $password, string $platform): array;
+    public function login(string $username, string $password, string $platform): ?string;
 
     /**
      * Get User info by token
-     * @param string $token
+     *
+     * @param string      $token
+     * @param string|null $platform
      *
      * @return array
      */
-    public function getUserByToken(string $token): array;
+    public function getUserByToken(string $token, ?string $platform = null): array;
 }
