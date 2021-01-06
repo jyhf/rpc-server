@@ -45,9 +45,9 @@ interface UserServiceInterface
      * @param string $password
      * @param string $platform
      *
-     * @return string|null
+     * @return array
      */
-    public function login(string $username, string $password, string $platform): ?string;
+    public function login(string $username, string $password, string $platform): array;
 
     /**
      * Get User info by token
